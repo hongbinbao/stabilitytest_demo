@@ -1,0 +1,4 @@
+[tests]
+script.testcases.demo.AppStoreTest.testLaunchAndExitAppStore = 1
+
+
