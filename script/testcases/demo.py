@@ -5,6 +5,11 @@ import unittest
 from uiautomatorplug.android import device as d
 
 class AppStoreTest(unittest.TestCase):
+    """
+    App Store test
+    Author: name@email.com
+    Date: 2014/08/19
+    """
     def setUp(self):
         """
         called before  each test method start.
@@ -15,7 +20,12 @@ class AppStoreTest(unittest.TestCase):
 
     def testLaunchAndExitAppStore(self):
         """
-        launch  app store and exit
+        Description: launch  app store and exit
+        Steps
+        1: launch "app store" application.
+        2: verify the screen of "app store" was launched successfully.
+        3: press "back" button
+        4: verify exit from "app store" successfully.
         """
         #verify App Store exists on home screen
         assert d(text="应用商店").exists, 'App Store icon not found!'
